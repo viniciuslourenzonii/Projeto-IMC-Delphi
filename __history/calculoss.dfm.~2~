@@ -1,0 +1,109 @@
+object calculos: Tcalculos
+  Left = 0
+  Top = 0
+  Caption = 'calculos'
+  ClientHeight = 199
+  ClientWidth = 447
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'Tahoma'
+  Font.Style = []
+  OldCreateOrder = False
+  PixelsPerInch = 96
+  TextHeight = 13
+  object fundo: TPanel
+    Left = 0
+    Top = 0
+    Width = 447
+    Height = 199
+    Align = alClient
+    Color = clPurple
+    ParentBackground = False
+    TabOrder = 0
+    ExplicitHeight = 201
+    object Logoimc: TStaticText
+      Left = 128
+      Top = 8
+      Width = 214
+      Height = 28
+      Caption = 'Calculadora IMC'
+      Color = 10876324
+      Font.Charset = ANSI_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -24
+      Font.Name = 'Lucida Console'
+      Font.Style = []
+      ParentColor = False
+      ParentFont = False
+      TabOrder = 0
+    end
+    object ealtura: TEdit
+      Left = 16
+      Top = 73
+      Width = 121
+      Height = 21
+      TabOrder = 1
+      OnChange = ealturaChange
+    end
+    object epeso: TEdit
+      Left = 16
+      Top = 152
+      Width = 121
+      Height = 21
+      TabOrder = 2
+    end
+    object altura: TStaticText
+      Left = 16
+      Top = 50
+      Width = 95
+      Height = 17
+      Caption = 'Insira a sua altura:'
+      Color = 10876324
+      ParentColor = False
+      TabOrder = 3
+    end
+    object peso: TStaticText
+      Left = 16
+      Top = 129
+      Width = 90
+      Height = 17
+      Caption = 'Insira o seu peso:'
+      Color = 10876324
+      ParentColor = False
+      TabOrder = 4
+    end
+    object calcular: TButton
+      Left = 248
+      Top = 146
+      Width = 82
+      Height = 34
+      Caption = 'Calcular'
+      TabOrder = 5
+      OnClick = calcularClick
+    end
+    object Sexo: TRadioGroup
+      Left = 264
+      Top = 50
+      Width = 145
+      Height = 76
+      Caption = 'Sexo:'
+      Color = clYellow
+      Items.Strings = (
+        'Masculino'
+        'Feminino')
+      ParentBackground = False
+      ParentColor = False
+      TabOrder = 6
+    end
+    object Button1: TButton
+      Left = 336
+      Top = 146
+      Width = 92
+      Height = 34
+      Caption = 'Limpar'
+      TabOrder = 7
+    end
+  end
+end
